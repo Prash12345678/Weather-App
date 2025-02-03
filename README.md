@@ -6,7 +6,7 @@ A responsive weather application that displays current weather data using the Op
 - Just open index.html in browser
 
 ## Live Production Link
-- 
+- https://snazzy-scone-5d930e.netlify.app/
 
 ## Features
 - City-based weather search
