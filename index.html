@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Dashboard</h1>
+        <form id="weatherForm">
+            <input type="text" id="cityInput" placeholder="Enter city name" required>
+            <button type="submit">Search</button>
+        </form>
+        
+        <div class="weather-card hidden">
+            <div class="location-header">
+                <h2 id="cityName"></h2>
+                <span id="countryCode"></span>
+            </div>
+            
+            <div class="weather-main">
+                <img id="weatherIcon" src="" alt="Weather Icon">
+                <div class="temp-section">
+                    <p id="temperature"></p>
+                    <p id="feelsLike"></p>
+                </div>
+            </div>
+            
+            <div class="weather-details">
+                <div class="detail-grid">
+                    <div class="detail">
+                        <i class="icon-humidity"></i>
+                        <p id="humidity"></p>
+                    </div>
+                    <div class="detail">
+                        <i class="icon-wind"></i>
+                        <p id="windSpeed"></p>
+                    </div>
+                    <div class="detail">
+                        <i class="icon-pressure"></i>
+                        <p id="pressure"></p>
+                    </div>
+                    <div class="detail">
+                        <i class="icon-visibility"></i>
+                        <p id="visibility"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sun-details">
+                <div class="sun-info">
+                    <p id="sunrise"></p>
+                    <p id="sunset"></p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="errorMessage" class="hidden"></div>
+        
+        <div class="app-controls">
+            <button id="geolocationBtn">Get My Location Weather</button>
+            <button id="unitToggle">Switch to °F</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
